@@ -28,7 +28,7 @@
       position: absolute;
       color: #fff;
       font-weight: bold;
-      font-size: 60px;
+      font-size: 68px;
       white-space: nowrap;
 
       &-container {
@@ -63,7 +63,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      border-radius: var(--box-radius);
+      border-radius: var(--border-radius);
 
       &-amount {
         color: #fff;
@@ -79,7 +79,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        border-radius: var(--box-radius);
+        border-radius: var(--border-radius);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(0, 0%, 11%) 100%);
       }
     }

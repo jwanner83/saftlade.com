@@ -2,6 +2,7 @@
   import Navigation from './lib/Navigation/Navigation.svelte'
   import Section from './lib/Layout/Section.svelte'
   import Offer from './lib/Pages/Offer/Offer.svelte'
+  import Promotion from './lib/Pages/Promotion/Promotion.svelte'
 </script>
 
 <main>
@@ -11,7 +12,7 @@
     <Offer />
   </Section>
   <Section title="Aktion">
-    <p>deger</p>
+    <Promotion />
   </Section>
 </main>
 
@@ -23,10 +24,10 @@
     --dark-gray: #636363;
 
     --primary-background: #000;
-    --secondary-background: #2B2B2B;
+    --secondary-background: #1C1C1C;
 
-    --box-radius: 10px;
-    --box-radius-small: 5px;
+    --border-radius: 10px;
+    --border-radius-small: 5px;
   }
 
   main {

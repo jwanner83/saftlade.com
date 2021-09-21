@@ -3,7 +3,7 @@
 </script>
 
 <div class="section">
-    <div id="{title.toLowerCase()}">
+    <div id="{title.toLowerCase()}" data-section>
         <h1 class="section__title">{title}</h1>
 
         <div class="section__content">

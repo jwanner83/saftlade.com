@@ -26,16 +26,16 @@
     <div class="navigation">
         <NavigationItem title="Angebot"
                         type="{active === 1 ? 'active' : 'inactive'}"
-                        link="angebot"
+                        link="#angebot"
                         on:click={() => setActive(1)}
         />
         <NavigationItem title="Aktion"
                         type="{active === 2 ? 'active' : 'inactive'}"
-                        link="aktion"
+                        link="#aktion"
                         on:click={() => setActive(2)}
         />
 
-        <NavigationItem title="Kontakt" type="dominant"/>
+        <NavigationItem title="Kontakt" type="dominant" link="mailto:jonas@wanner.com?subject=Saftlade: Kontaktanfrage"/>
     </div>
 </div>
 
@@ -49,7 +49,7 @@
 
     &__wrapper {
       z-index: 10;
-      position: fixed;
+      position: sticky;
       top: 0;
       width: 100%;
       display: flex;

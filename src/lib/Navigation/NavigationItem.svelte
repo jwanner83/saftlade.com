@@ -5,7 +5,7 @@
 </script>
 
 {#if link}
-    <a on:click class="navigation__item navigation__item--{type}" href="#{link}">
+    <a on:click class="navigation__item navigation__item--{type}" href="{link}">
         {title}
     </a>
 {:else}

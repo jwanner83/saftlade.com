@@ -10,9 +10,9 @@
     </div>
 
     <div class="offer__banner-container">
-        <p class="offer__banner offer__banner--first">REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL</p>
-        <p class="offer__banner offer__banner--second">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
-        <p class="offer__banner offer__banner--third">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
+        <p class="offer__banner offer__banner--first">REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL</p>
+        <p class="offer__banner offer__banner--second">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
+        <p class="offer__banner offer__banner--third">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
     </div>
 </div>
 

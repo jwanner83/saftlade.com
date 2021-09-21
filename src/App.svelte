@@ -3,17 +3,20 @@
   import Section from './lib/Layout/Section.svelte'
   import Offer from './lib/Pages/Offer/Offer.svelte'
   import Promotion from './lib/Pages/Promotion/Promotion.svelte'
+  import Home from './lib/Pages/Home/Home.svelte'
 </script>
 
 <main>
-  <Navigation />
-
-  <Section title="Angebot">
-    <Offer />
-  </Section>
-  <Section title="Aktion">
-    <Promotion />
-  </Section>
+    <Home />
+    <Navigation/>
+    <div class="content">
+        <Section title="Angebot">
+            <Offer />
+        </Section>
+        <Section title="Aktion">
+            <Promotion />
+        </Section>
+    </div>
 </main>
 
 <style>
@@ -31,9 +34,15 @@
   }
 
   main {
-    overflow: hidden;
     min-height: 100%;
     width: 100%;
     background: var(--primary-background);
+  }
+
+  .content {
+      overflow: hidden;
+      min-height: 100%;
+      width: 100%;
+      background: var(--primary-background);
   }
 </style>

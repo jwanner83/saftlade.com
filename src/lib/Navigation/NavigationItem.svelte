@@ -25,7 +25,7 @@
     font-weight: bold;
     font-size: 18px;
     border: none;
-    border-radius: var(--box-radius-small);
+    border-radius: var(--border-radius-small);
 
     &--active {
       background: var(--primary-light);

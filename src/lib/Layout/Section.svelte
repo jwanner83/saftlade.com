@@ -19,6 +19,10 @@
     margin: 0 auto;
     text-align: center;
 
+    @media (max-width: 700px) {
+      padding: 0 40px 40px;
+    }
+
     &__title {
       padding-top: 200px;
       margin-top: 0;

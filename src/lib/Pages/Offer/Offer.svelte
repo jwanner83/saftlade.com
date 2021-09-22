@@ -1,12 +1,36 @@
+<script lang="ts">
+import { onMount } from 'svelte'
+
+const observer: IntersectionObserver = new IntersectionObserver(onIntersect, {
+    threshold: 0.6
+})
+
+function onIntersect(entries): void {
+    for (const entry of entries) {
+        console.log('entry', entry)
+
+        if (entry.intersectionRatio > 0) {
+            entry.target.classList.add('offer__intersect')
+        }
+    }
+}
+
+onMount(async () => {
+    document.querySelectorAll('[data-offer-intersect]').forEach(element => {
+        observer.observe(element)
+    })
+})
+</script>
+
 <div class="offer">
-    <div class="offer__item offer__item--first">
+    <div class="offer__item offer__item--first" data-offer-intersect>
         <h3 class="offer__item-amount">NUR 1.50 CHF</h3>
     </div>
-    <div class="offer__item offer__item--second">
+    <div class="offer__item offer__item--second" data-offer-intersect>
         <h3 class="offer__item-amount">NUR 1.05 CHF</h3>
     </div>
 
-    <div class="offer__banner-container">
+    <div class="offer__banner-container" data-offer-intersect>
         <p class="offer__banner offer__banner--first">REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL</p>
         <p class="offer__banner offer__banner--second">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
         <p class="offer__banner offer__banner--third">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
@@ -20,8 +44,17 @@
     gap: 50px;
     height: 500px;
 
+    @media (max-width: 850px) {
+      height: 400px;
+    }
+
+    @media (max-width: 700px) {
+      gap: 20px;
+    }
+
     &__banner {
-      transform: rotate(-10deg);
+      opacity: 0;
+      transition: 1s;
       position: absolute;
       color: #fff;
       font-weight: bold;
@@ -39,22 +72,40 @@
     }
 
     &__banner--first {
+      transform: translateX(-80px) rotate(-10deg);
       z-index: 2;
       margin-top: -100px;
+
+      @media (max-width: 700px) {
+        margin-top: -50px;
+      }
     }
 
     &__banner--second {
+      transform: translateX(80px) rotate(-10deg);
       z-index: 4;
       margin-bottom: -100px;
       clip-path: inset(0 0 0 50%);
+
+      @media (max-width: 700px) {
+        margin-bottom: -50px;
+      }
     }
 
     &__banner--third {
+      transform: translateX(80px) rotate(-10deg);
       margin-bottom: -100px;
       clip-path: inset(0 50% 0 0);
+
+      @media (max-width: 700px) {
+        margin-bottom: -50px;
+      }
     }
 
     &__item {
+      transition: 0.8s;
+      opacity: 0;
+      transform: translateY(60px);
       position: relative;
       height: 100%;
       width: 100%;
@@ -89,6 +140,7 @@
     }
 
     &__item--second {
+      transition-delay: 0.3s;
       z-index: 3;
       background: url("https://images.unsplash.com/photo-1561050933-2482aca2dd64?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWNldGVhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60") center center no-repeat;
       background-size: cover;
@@ -97,6 +149,20 @@
       &::before {
         transform: rotate(180deg);
       }
+    }
+  }
+
+  :global .offer {
+    .offer__item.offer__intersect {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    .offer__banner-container.offer__intersect {
+        .offer__banner {
+          opacity: 1;
+          transform: translateX(0) rotate(-10deg);
+        }
     }
   }
 </style>

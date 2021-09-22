@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <div class="offer">
     <div class="offer__item offer__item--first">
         <h3 class="offer__item-amount">NUR 1.50 CHF</h3>

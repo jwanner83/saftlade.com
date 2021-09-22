@@ -3,15 +3,15 @@
     import NavigationItem from './NavigationItem.svelte'
 
     let active: number = 1
-    const observer = new IntersectionObserver(onEntry, {
-        threshold: [0.5]
+    const observer: IntersectionObserver = new IntersectionObserver(onEntry, {
+        threshold: 0.7
     })
 
     function setActive(index: number): void {
         active = index
     }
 
-    function onEntry(entry) {
+    function onEntry(entry): void {
         setActive(entry[0].target.id === 'angebot' ? 1 : 2)
     }
 

@@ -46,8 +46,17 @@
     display: flex;
     gap: 10px;
     border-radius: var(--border-radius);
+    animation: transition-in 0.6s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+    @media (max-width: 850px) {
+      padding: 5px;
+      gap: 5px;
+    }
 
     &__wrapper {
+      overflow: hidden;
       z-index: 10;
       position: sticky;
       top: 0;
@@ -55,6 +64,17 @@
       display: flex;
       justify-content: center;
       padding: 40px 0;
+    }
+  }
+
+  @keyframes transition-in {
+    from {
+      opacity: 0;
+      transform: translateY(100%) scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
   }
 </style>

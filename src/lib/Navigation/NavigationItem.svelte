@@ -27,6 +27,11 @@
     border: none;
     border-radius: var(--border-radius-small);
 
+    @media (max-width: 850px) {
+      padding: 12px 8px 8px;
+      width: 140px;
+    }
+
     &--active {
       background: var(--primary-light);
       color: var(--primary)

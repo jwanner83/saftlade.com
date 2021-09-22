@@ -23,12 +23,9 @@
   :root {
     --primary-light: #48A8BC29;
     --primary: #48A8BC;
-
     --dark-gray: #636363;
-
     --primary-background: #000;
     --secondary-background: #1C1C1C;
-
     --border-radius: 10px;
     --border-radius-small: 5px;
   }
@@ -37,6 +34,7 @@
     min-height: 100%;
     width: 100%;
     background: var(--primary-background);
+    padding-bottom: 150px;
   }
 
   .content {

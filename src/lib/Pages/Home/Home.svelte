@@ -6,8 +6,7 @@
         <div class="home__animation">
             <img class="home__logo" src="logo.png" alt="saftlade.com logo">
             <p class="home__text">
-                Ihre vertrauenswürdige Quelle für erfrischende, reaktivierende und leistungssteigerende
-                Getränke.
+                Ihre vertrauenswürdige Quelle für erfrischende, reaktivierende und leistungssteigernde Getränke.
             </p>
         </div>
     </div>
@@ -62,7 +61,7 @@
       border-radius: var(--border-radius);
       height: 100%;
       width: 100%;
-      background: url("images/hero.jpg") center center no-repeat;
+      background: url("/images/hero.jpg") center center no-repeat;
       background-size: cover;
       animation: transition-in 0.8s;
       animation-fill-mode: both;

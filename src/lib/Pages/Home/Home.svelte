@@ -4,7 +4,7 @@
     </div>
     <div class="home__section home__section--second">
         <div class="home__animation">
-            <h1 class="home__title">Saftlade</h1>
+            <img class="home__logo" src="logo.png" alt="saftlade.com logo">
             <p class="home__text">
                 Ihre vertrauenswürdige Quelle für erfrischende, reaktivierende und leistungssteigerende
                 Getränke.
@@ -40,13 +40,21 @@
       }
 
       &--second {
-        margin-top: -35px;
+        margin-top: -130px;
         display: flex;
         align-items: center;
         flex-direction: column;
         text-align: center;
         overflow: hidden;
         padding: 0 50px;
+
+        @media (max-width: 1200px) {
+          margin-top: -120px;
+        }
+
+        @media (max-width: 750px) {
+          margin-top: -95px;
+        }
       }
     }
 
@@ -54,7 +62,7 @@
       border-radius: var(--border-radius);
       height: 100%;
       width: 100%;
-      background: url("https://images.unsplash.com/photo-1616885379155-964c09e3c29c") center center no-repeat;
+      background: url("images/hero.jpg") center center no-repeat;
       background-size: cover;
       animation: transition-in 0.8s;
       animation-fill-mode: both;
@@ -64,12 +72,18 @@
       }
     }
 
-    &__title {
-      font-size: 80px;
-      margin: 0;
+    &__logo {
+      margin-left: -80px;
+      width: 650px;
+
+      @media (max-width: 1200px) {
+        margin-left: -65px;
+        width: 570px;
+      }
 
       @media (max-width: 750px) {
-        font-size: 70px;
+        margin-left: -56px;
+        width: 450px;
       }
     }
 

@@ -22,7 +22,7 @@
 <style>
   :root {
     --primary-light: #48A8BC29;
-    --primary: #48A8BC;
+    --primary: #ffffff;
     --dark-gray: #636363;
     --primary-background: #000;
     --secondary-background: #1C1C1C;

@@ -7,8 +7,6 @@ const observer: IntersectionObserver = new IntersectionObserver(onIntersect, {
 
 function onIntersect(entries): void {
     for (const entry of entries) {
-        console.log('entry', entry)
-
         if (entry.intersectionRatio > 0) {
             entry.target.classList.add('offer__intersect')
         }
@@ -134,7 +132,7 @@ onMount(async () => {
 
     &__item--first {
       z-index: 1;
-      background: url("https://images.unsplash.com/photo-1570526427001-9d80d114054d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80") center center no-repeat;
+      background: url("images/redbull.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-end;
     }
@@ -142,7 +140,7 @@ onMount(async () => {
     &__item--second {
       transition-delay: 0.3s;
       z-index: 3;
-      background: url("https://images.unsplash.com/photo-1561050933-2482aca2dd64?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aWNldGVhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60") center center no-repeat;
+      background: url("images/icetea.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-start;
 

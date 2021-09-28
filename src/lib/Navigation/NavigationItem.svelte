@@ -19,21 +19,18 @@
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
-    padding: 16px 12px 12px;
+    padding: 16px 5px;
     text-align: center;
-    width: 200px;
     font-weight: bold;
     font-size: 18px;
     border: none;
     border-radius: var(--border-radius-small);
 
-    @media (max-width: 850px) {
-      padding: 12px 8px 8px;
-      width: 140px;
+    :global & + & {
+      margin-left: 25px;
     }
 
     &--active {
-      background: var(--primary-light);
       color: var(--primary)
     }
 

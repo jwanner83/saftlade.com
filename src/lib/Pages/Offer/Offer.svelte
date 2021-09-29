@@ -132,7 +132,7 @@ onMount(async () => {
 
     &__item--first {
       z-index: 1;
-      background: url("images/redbull.jpg") center center no-repeat;
+      background: url("/images/redbull.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-end;
     }
@@ -140,7 +140,7 @@ onMount(async () => {
     &__item--second {
       transition-delay: 0.3s;
       z-index: 3;
-      background: url("images/icetea.jpg") center center no-repeat;
+      background: url("/images/icetea.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-start;
 

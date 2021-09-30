@@ -77,8 +77,9 @@
         .promotion__main-background {
           top: 0;
           left: 0;
-          margin: -8px 0 0 -260px;
+          margin: -8px 0 0 -230px;
           font-size: 560px;
+          letter-spacing: -50px;
         }
       }
 

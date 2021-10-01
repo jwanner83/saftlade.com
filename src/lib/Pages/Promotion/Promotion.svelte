@@ -103,19 +103,5 @@
         color: var(--dark-gray);
       }
     }
-
-    &__call {
-      display: flex;
-      align-items: center;
-      padding: 0 40px;
-      border-radius: var(--border-radius);
-      background: #fff;
-
-      &-text {
-        text-align: left;
-        font-weight: bold;
-        font-size: 30px;
-      }
-    }
   }
 </style>

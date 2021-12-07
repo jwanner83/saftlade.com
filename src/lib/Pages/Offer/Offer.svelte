@@ -22,16 +22,16 @@ onMount(async () => {
 
 <div class="offer">
     <div class="offer__item offer__item--first" data-offer-intersect>
-        <h3 class="offer__item-amount">NUR 1.50 CHF</h3>
+        <h3 class="offer__item-amount">NUR 1.65 CHF</h3>
     </div>
     <div class="offer__item offer__item--second" data-offer-intersect>
-        <h3 class="offer__item-amount">NUR 1.05 CHF</h3>
+        <h3 class="offer__item-amount">COMING SOON</h3>
     </div>
 
     <div class="offer__banner-container" data-offer-intersect>
-        <p class="offer__banner offer__banner--first">REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL REDBULL</p>
-        <p class="offer__banner offer__banner--second">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
-        <p class="offer__banner offer__banner--third">ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA ICETEA</p>
+        <p class="offer__banner offer__banner--first">MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE</p>
+        <p class="offer__banner offer__banner--second">CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN</p>
+        <p class="offer__banner offer__banner--third">CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN</p>
     </div>
 </div>
 
@@ -132,7 +132,7 @@ onMount(async () => {
 
     &__item--first {
       z-index: 1;
-      background: url("/images/redbull.jpg") center center no-repeat;
+      background: url("/images/mate.gif") center center no-repeat;
       background-size: cover;
       align-items: flex-end;
     }
@@ -140,7 +140,7 @@ onMount(async () => {
     &__item--second {
       transition-delay: 0.3s;
       z-index: 3;
-      background: url("/images/icetea.jpg") center center no-repeat;
+      background: url("/images/juice.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-start;
 

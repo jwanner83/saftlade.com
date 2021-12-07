@@ -1,29 +1,11 @@
 <div class="promotion">
     <div class="promotion__main promotion__main--redbull">
-        <div class="promotion__main-background">NEU</div>
+        <div class="promotion__main-background">MATE</div>
         <h1 class="promotion__main-subtitle">NEU VERFÜGBAR</h1>
-        <h1 class="promotion__main-title">Redbull</h1>
+        <h1 class="promotion__main-title">EL TONY MATE</h1>
         <p class="promotion__main-text">
-            Profitieren sie jetzt von einem unschlagbaren Einführungspreis.*
+          Des Programmierers Segen, des Schlafes Fluch.
         </p>
-    </div>
-    <div class="promotion__main promotion__main--icetea">
-        <div class="promotion__main-background">%</div>
-        <h1 class="promotion__main-title">Eistee<br> Ausverkauf</h1>
-        <p class="promotion__main-text">
-            Alles muss raus! Jetzt von legendären 10%** auf den Eistee profitieren!
-        </p>
-    </div>
-    <div class="promotion__wrapper">
-        <div class="promotion__information">
-            <p class="promotion__information-text">
-                * Der Einführungspreis von 1.50 CHF pro Dose ist bis am 10. Oktober 2021 gültig.
-            </p>
-            <p class="promotion__information-text">
-                ** 9,52381% auf den Preis von einem Eistee. Angebot ist bis am 12. Oktober 2021 gültig oder solange
-                vorrat.
-            </p>
-        </div>
     </div>
 </div>
 
@@ -72,7 +54,7 @@
       }
 
       &--redbull {
-        background: linear-gradient(115deg, #452730 0%, hsl(250, 76%, 50%) 100%);
+        background: linear-gradient(65deg, #d8ca00 0%, hsl(253, 100%, 31%) 100%);
 
         .promotion__main-background {
           top: 0;

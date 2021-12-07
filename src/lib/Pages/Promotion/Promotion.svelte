@@ -59,8 +59,9 @@
         .promotion__main-background {
           top: 0;
           left: 0;
-          margin: -8px 0 0 -260px;
+          margin: -8px 0 0 -230px;
           font-size: 560px;
+          letter-spacing: -50px;
         }
       }
 
@@ -82,20 +83,6 @@
       &-text {
         text-align: left;
         color: var(--dark-gray);
-      }
-    }
-
-    &__call {
-      display: flex;
-      align-items: center;
-      padding: 0 40px;
-      border-radius: var(--border-radius);
-      background: #fff;
-
-      &-text {
-        text-align: left;
-        font-weight: bold;
-        font-size: 30px;
       }
     }
   }

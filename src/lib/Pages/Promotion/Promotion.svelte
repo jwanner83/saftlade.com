@@ -1,10 +1,10 @@
 <div class="promotion">
     <div class="promotion__main promotion__main--redbull">
-        <div class="promotion__main-background">MATE</div>
+        <div class="promotion__main-background">CAPRI</div>
         <h1 class="promotion__main-subtitle">NEU VERFÜGBAR</h1>
-        <h1 class="promotion__main-title">EL TONY MATE</h1>
+        <h1 class="promotion__main-title">CAPRI SUN</h1>
         <p class="promotion__main-text">
-          Des Programmierers Segen, des Schlafes Fluch.
+          Vitaminreicher Fruchtsaft belebt Geist und Körper.
         </p>
     </div>
 </div>

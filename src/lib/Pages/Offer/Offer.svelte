@@ -22,14 +22,14 @@ onMount(async () => {
 
 <div class="offer">
     <div class="offer__item offer__item--first" data-offer-intersect>
-        <h3 class="offer__item-amount">NUR 1.65 CHF</h3>
+        <h3 class="offer__item-amount">NUR 1.95 CHF</h3>
     </div>
     <div class="offer__item offer__item--second" data-offer-intersect>
-        <h3 class="offer__item-amount">COMING SOON</h3>
+        <h3 class="offer__item-amount">NUR 0.65 CHF</h3>
     </div>
 
     <div class="offer__banner-container" data-offer-intersect>
-        <p class="offer__banner offer__banner--first">MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE MATE</p>
+        <p class="offer__banner offer__banner--first">COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO COLA ZERO</p>
         <p class="offer__banner offer__banner--second">CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN</p>
         <p class="offer__banner offer__banner--third">CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN CAPRI SUN</p>
     </div>
@@ -132,7 +132,7 @@ onMount(async () => {
 
     &__item--first {
       z-index: 1;
-      background: url("/images/mate.gif") center center no-repeat;
+      background: url("/images/cola.jpg") center center no-repeat;
       background-size: cover;
       align-items: flex-end;
     }
